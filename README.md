@@ -1,15 +1,33 @@
 ### Date created
-Include the date you created this project and README file.
+Originally created July 22nd, 2020
 
 ### Project Title
-Replace the Project Title
+BikeShare Data Analysis
 
 ### Description
-Describe what your project is about and what it does
+This script analyzes BikeShare data according to the city and filter specifications provided by the user.  It returns various statistics and lets the user few the date five rows at a time.
 
 ### Files used
-Include the files used
+bikeshare.py - main file
+chicago.csv, washington.csv, new_york_city.csv - data files parsed by bikeshare script.  Not uploaded due to file size.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+The following references were extremely useful while writing and formatting the bikeshare code:
 
+PEP 8 -- Style Guide for Python Code
+https://www.python.org/dev/peps/pep-0008/
+
+PEP 257 -- Docstring Conventions
+https://www.python.org/dev/peps/pep-0257/
+
+Python Standard Library Reference
+https://docs.python.org/3/library/index.html
+
+Numpy Reference Guide
+https://docs.scipy.org/doc/numpy/numpy-ref-1.17.0.pdf
+
+Numpy User Guide
+https://docs.scipy.org/doc/numpy/numpy-user-1.17.0.pdf
+
+Pandas Documentation
+https://pandas.pydata.org/pandas-docs/stable/pandas.pdf
