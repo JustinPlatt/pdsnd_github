@@ -19,32 +19,28 @@ def get_filters():
 
     print('Hello! Let\'s explore some US bikeshare data!')
 
-    city_prompt = 'Analyze data for [C]hicago, [N]ew York City, or [W]ashington? '
-    city = input(city_prompt).lower()
+    city = input('Analyze data for [C]hicago, [N]ew York City, or [W]ashington? ').lower()
     while city not in ['c', 'n', 'w']:
         print('\nInvalid choice!')
-        city = input(city_prompt).lower()
+        city = input('Analyze data for [C]hicago, [N]ew York City, or [W]ashington? ').lower()
 
-    filter_prompt = 'Filter data by [M]onth, [D]ay of week, [B]oth, or [N]one? '
-    filter_input = input(filter_prompt).lower()
+    filter_input = input('Filter data by [M]onth, [D]ay of week, [B]oth, or [N]one? ').lower()
     while filter_input not in ['m', 'd', 'b', 'n']:
         print('\nInvalid choice!')
-        filter_input = input(filter_prompt).lower()
+        filter_input = input('Filter data by [M]onth, [D]ay of week, [B]oth, or [N]one? ').lower()
 
     f = filter_input
     if f != 'n':
         if f in ['m', 'b']:
-            month_prompt = 'Which month?  Input as an integer between 1 (Jan) and 6 (Jun) '
-            month = input(month_prompt)
+            month = input('Which month?  Input as an integer between 1 (Jan) and 6 (Jun) ')
             while month not in ('1', '2', '3', '4', '5', '6'):
                 print('\nInvalid choice!')
-                month = input(month_prompt)
+                month = input('Which month?  Input as an integer between 1 (Jan) and 6 (Jun) ')
         if f in ['d', 'b']:
-            day_prompt = 'Which day of the week?  Input as an integer between 0 (Monday) and 6 (Sunday) '
-            day = input(day_prompt)
+            day = input('Which day of the week?  Input as an integer between 0 (Monday) and 6 (Sunday) ')
             while day not in ('0', '1', '2', '3', '4', '5', '6'):
                 print('\nInvalid choice!')
-                day = input(day_prompt)
+                day = input('Which day of the week?  Input as an integer between 0 (Monday) and 6 (Sunday) ')
 
     print('-'*40)
     return city, month, day
