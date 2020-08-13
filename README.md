@@ -5,14 +5,14 @@ Originally created July 22nd, 2020
 BikeShare Data Analysis
 
 ### Description
-This script analyzes BikeShare data according to the city and filter specifications provided by the user.  It returns various statistics and lets the user few the date five rows at a time.
+This script analyzes BikeShare data according to the city and filter specifications provided by the user.  It returns various statistics and lets the user view the date five rows at a time.
 
 ### Files used
 bikeshare.py - main file
 chicago.csv, washington.csv, new_york_city.csv - data files parsed by bikeshare script.  Not uploaded due to file size.
 
 ### Credits
-The following references were extremely useful while writing and formatting the bikeshare code:
+The following references were extremely useful while writing, debugging, and formatting the bikeshare code:
 
 PEP 8 -- Style Guide for Python Code
 
