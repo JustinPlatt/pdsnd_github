@@ -15,19 +15,25 @@ chicago.csv, washington.csv, new_york_city.csv - data files parsed by bikeshare 
 The following references were extremely useful while writing and formatting the bikeshare code:
 
 PEP 8 -- Style Guide for Python Code
+
 https://www.python.org/dev/peps/pep-0008/
 
 PEP 257 -- Docstring Conventions
+
 https://www.python.org/dev/peps/pep-0257/
 
 Python Standard Library Reference
+
 https://docs.python.org/3/library/index.html
 
 Numpy Reference Guide
+
 https://docs.scipy.org/doc/numpy/numpy-ref-1.17.0.pdf
 
 Numpy User Guide
+
 https://docs.scipy.org/doc/numpy/numpy-user-1.17.0.pdf
 
 Pandas Documentation
+
 https://pandas.pydata.org/pandas-docs/stable/pandas.pdf
