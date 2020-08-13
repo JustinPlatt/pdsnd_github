@@ -81,7 +81,6 @@ def time_stats(df):
     print('Most common month: ' + df['Month'].mode()[0])
     print('Most common day of week: ' + df['Day of Week'].mode()[0])
     print('Most common start hour: ' + str(df['Start Hour'].mode()[0]))
-
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -165,11 +164,10 @@ def view_data(df):
         print(df.iloc[start_row:end_row])
         start_row += 5
         end_row +=5
-        view_prompt = '\nWould you like to view five more rows? Enter [Y]es or [N]o.\n'
-        view_more = input(view_prompt).lower()
+        view_more = input('\nWould you like to view five more rows? Enter [Y]es or [N]o.\n').lower()
         while view_more not in ('n', 'y'):
             print('\nInvalid choice!')
-            view_more = input(view_prompt).lower()
+            view_more = input('\nWould you like to view five more rows? Enter [Y]es or [N]o.\n').lower()
 
 def main():
     while True:
@@ -181,11 +179,10 @@ def main():
         user_stats(df)
         view_data(df)
 
-        restart_prompt = '\nWould you like to restart? Enter [Y]es or [N]o.\n'
-        restart = input(restart_prompt).lower()
+        restart = input('\nWould you like to restart? Enter [Y]es or [N]o.\n').lower()
         while restart not in ('n', 'y'):
             print('\nInvalid choice!')
-            restart = input(restart_prompt)
+            restart = input('\nWould you like to restart? Enter [Y]es or [N]o.\n').lower()
 
         if restart == 'n': #quit if restart = n, otherwise restart
             print('\nSee you next time!')
