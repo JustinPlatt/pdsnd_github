@@ -95,18 +95,19 @@ def station_stats(df):
     start_counts = df['Start Station'].value_counts()
     top_start = start_counts.index[0] #Name of most frequent trip
     top_start_ct = start_counts.values[0] #Count of most frequent trip
-    print('Most commonly used start station: ' + top_start + ' (' + str(top_start_ct) + ' times)')
+    print('Most commonly used start station: {} ({} times)'.format(top_start,str(top_start_ct)))
+
 
     end_counts = df['End Station'].value_counts()
     top_end = end_counts.index[0] #Name of most frequent trip
     top_end_ct = end_counts.values[0] #Count of most frequent trip
-    print('Most commonly used end station: ' + top_end + ' (' + str(top_end_ct) + ' times)')
+    print('Most commonly used end station: {} ({} times)'.format(top_end,str(top_end_ct)))
 
 
     trip_counts = df['Start and End Station'].value_counts()
     top_trip = trip_counts.index[0]
     top_trip_ct = trip_counts.values[0]
-    print('Most popular trip: ' + top_trip + ' (' + str(top_trip_ct) + ' trips)')
+    print('Most commonly used start station: {} ({} trips)'.format(top_trip,str(top_trip_ct)))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
